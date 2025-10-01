@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base app theme (pakai Compose, tidak perlu ActionBar) -->
+    <style name="Base.Theme.Ahmadghozali" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Warna utama aplikasi -->
+        <item name="colorPrimary">@color/blue_700</item>
+        <item name="colorSecondary">@color/teal_200</item>
+    </style>
+
+    <!-- 🔹 Tema utama app -->
+    <style name="Theme.Ahmadghozali" parent="Base.Theme.Ahmadghozali"/>
+
+    <!-- 🔹 Tema SplashScreen -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Background splash -->
+        <item name="windowSplashScreenBackground">@color/white</item>
+
+        <!-- Logo splash (pakai ic_launcher atau logo custom) -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_android_black_24dp</item>
+
+        <!-- Durasi animasi logo (ms) -->
+        <item name="windowSplashScreenAnimationDuration">500</item>
+
+        <!-- Tema yang dipakai setelah splash hilang -->
+        <item name="postSplashScreenTheme">@style/Theme.Ahmadghozali</item>
+    </style>
+
+</resources>
